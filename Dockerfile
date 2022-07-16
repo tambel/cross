@@ -17,10 +17,10 @@ RUN apt install -y autoconf \
         texinfo \
         unzip
 
-RUN curl --output crosstool-ng-1.24.0.tar.gz -L https://github.com/crosstool-ng/crosstool-ng/archive/refs/tags/crosstool-ng-1.24.0.tar.gz
+RUN curl --output crosstool-ng-1.25.0.tar.gz -L https://github.com/crosstool-ng/crosstool-ng/archive/refs/tags/crosstool-ng-1.25.0.tar.gz
 
-RUN tar -xzvf crosstool-ng-1.24.0.tar.gz
-WORKDIR crosstool-ng-crosstool-ng-1.24.0
+RUN tar -xzvf crosstool-ng-1.25.0.tar.gz
+WORKDIR crosstool-ng-crosstool-ng-1.25.0
 
 RUN ./bootstrap
 
