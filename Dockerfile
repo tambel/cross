@@ -49,5 +49,4 @@ WORKDIR /home/user
 USER user
 
 RUN ct-ng x86_64-centos6-linux-gnu
-
-RUN ct-ng build
+RUN ct-ng build -j "$(nproc)"
